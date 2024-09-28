@@ -18,8 +18,8 @@ public class CurrencyConverter {
         return convert("USD", "ARS", dollars);
     }
 
-    public double convertPesosArgentinosToPesosMexicanos(double pesosArgentinos) throws Exception {
-        return convert("ARS", "MXN", pesosArgentinos);
+    public double convertPesosArgentinosToDollars(double pesosArgentinos) throws Exception {
+        return convert("ARS", "USD", pesosArgentinos);
     }
 
     public double convertDollarsToRealesBrasilenos(double dollars) throws Exception {
