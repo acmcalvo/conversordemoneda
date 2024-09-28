@@ -4,14 +4,30 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import io.github.cdimascio.dotenv.Dotenv;
 import org.json.JSONObject;
 
 public class ExchangeRateService {
-    private final String apiKey = "25c7cf0caf019d15c3fcfa3b";
-    private final String apiUrl = "https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/";
+//    private final String apiKey = "25c7cf0caf019d15c3fcfa3b";
+//    private final String apiUrl = "https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/";
 
-    public double getExchangeRate(String fromCurrency, String toCurrency) throws Exception {
-        String requestUrl = apiUrl + fromCurrency + "/" + toCurrency;
+    private final String apiKey;
+    private final String apiUrl = "https://v6.exchangerate-api.com/v6/";
+
+    public ExchangeRateService() {
+        // Cargamos el archivo .env
+        Dotenv dotenv = Dotenv.load();
+        this.apiKey = dotenv.get("EXCHANGE_API_KEY");
+        if (apiKey == null || apiKey.isEmpty()) {
+            throw new RuntimeException("API key is missing. Ensure EXCHANGE_API_KEY is set in .env file.");
+        }
+    }
+
+//    public double getExchangeRate(String fromCurrency, String toCurrency) throws Exception {
+//        String requestUrl = apiUrl + fromCurrency + "/" + toCurrency;
+public double getExchangeRate(String fromCurrency, String toCurrency) throws Exception {
+    String requestUrl = apiUrl + apiKey + "/pair/" + fromCurrency + "/" + toCurrency;
         URL url = new URL(requestUrl);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");

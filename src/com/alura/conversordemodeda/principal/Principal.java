@@ -21,7 +21,8 @@ public class Principal {
             System.out.println("4. Real Brasileño ==> Dólar");
             System.out.println("5. Dólar ==> Peso Colombiano");
             System.out.println("6. Peso Colombiano ==> Dólar");
-            System.out.println("7. Salir");
+            System.out.println("7. Peso Colombiano ==> Dólar");
+            System.out.println("8. Salir");
             System.out.println("Elija una opción valida:");
             System.out.println("**********************");
 
@@ -67,6 +68,12 @@ public class Principal {
                         System.out.println("Equivalente en dólares: " + resultUsdFromCop);
                         break;
                     case 7:
+                        System.out.print("Ingresa la cantidad en colones Costa Rica: ");
+                        double crcToUsd = scanner.nextDouble();
+                        double resultCrc = converter.convertColonesCostaRicatoDollars(crcToUsd);
+                        System.out.println("Equivalente en dólares: " + resultCrc);
+                        break;
+                    case 8:
                         exit = true;
                         System.out.println("Saliendo del programa...");
                         break;

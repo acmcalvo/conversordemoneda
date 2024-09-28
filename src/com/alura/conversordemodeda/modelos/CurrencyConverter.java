@@ -12,12 +12,8 @@ public class CurrencyConverter {
         return amount * rate;
     }
 
-    // Método para convertir dólares a colones
-    public double convertDollarsToColones(double dollars) throws Exception {
-        return convert("USD", "CRC", dollars);
-    }
 
-    // Otros métodos para las diferentes conversiones
+    // Conversiones
     public double convertDollarsToPesosArgentinos(double dollars) throws Exception {
         return convert("USD", "ARS", dollars);
     }
@@ -41,4 +37,11 @@ public class CurrencyConverter {
     public double convertPesosColombianosToDollars(double pesosColombianos) throws Exception {
         return convert("COP", "USD", pesosColombianos);
     }
+
+//    Metodo extra Costa Rica
+public double convertColonesCostaRicatoDollars(double colonesCostaRica) throws Exception {
+    return convert("CRC", "USD", colonesCostaRica);
 }
+    }
+
+
