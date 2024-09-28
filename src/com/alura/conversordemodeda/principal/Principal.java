@@ -22,7 +22,8 @@ public class Principal {
             System.out.println("5. Dólar ==> Peso Colombiano");
             System.out.println("6. Peso Colombiano ==> Dólar");
             System.out.println("7. Dólar ==> Colon Costa Rica");
-            System.out.println("8. Salir");
+            System.out.println("8. Colon Costa Rica ==> Dólar");
+            System.out.println("10. Salir");
             System.out.println("Elija una opción valida:");
             System.out.println("**********************");
 
@@ -40,8 +41,8 @@ public class Principal {
                         break;
                     case 2:
                         System.out.print("Ingresa la cantidad en pesos argentinos: ");
-                        double arsToMx = scanner.nextDouble();
-                        double resultMx = converter.convertPesosArgentinosToDollars(arsToMx);
+                        double arsToDollars = scanner.nextDouble();
+                        double resultMx = converter.convertPesosArgentinosToDollars(arsToDollars);
                         System.out.println("Equivalente en dólares: " + resultMx);
                         pressEnterToContinue();
                         break;
@@ -77,10 +78,17 @@ public class Principal {
                         System.out.print("Ingresa la cantidad en colones Costa Rica: ");
                         double crcToUsd = scanner.nextDouble();
                         double resultCrc = converter.convertColonesCostaRicatoDollars(crcToUsd);
-                        System.out.println("Equivalente en dólares: " + resultCrc);
+                        System.out.println("Equivalente en dólares: " + resultCrc +" [CRC]");
                         pressEnterToContinue();
                         break;
                     case 8:
+                        System.out.print("Ingresa la cantidad en dolares: ");
+                        double usdToCrc = scanner.nextDouble();
+                        double resultCrcFromUSA = converter.converDollarsToColonesCostaRica(usdToCrc);
+                        System.out.println("Equivalente en dólares: " + resultCrcFromUSA);
+                        pressEnterToContinue();
+                        break;
+                    case 10:
                         exit = true;
                         System.out.println("Saliendo del programa...");
                         break;

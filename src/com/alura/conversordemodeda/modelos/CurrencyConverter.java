@@ -42,6 +42,10 @@ public class CurrencyConverter {
 public double convertColonesCostaRicatoDollars(double colonesCostaRica) throws Exception {
     return convert("CRC", "USD", colonesCostaRica);
 }
+    public double converDollarsToColonesCostaRica(double colonesCostaRica) throws Exception {
+        return convert("USD", "CRC", colonesCostaRica);
+    }
+
     }
 
 

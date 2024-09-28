@@ -9,10 +9,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 import org.json.JSONObject;
 
 public class ExchangeRateService {
-//    private final String apiKey = "25c7cf0caf019d15c3fcfa3b";
-//    private final String apiUrl = "https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/";
-
-    private final String apiKey;
+ private final String apiKey;
     private final String apiUrl = "https://v6.exchangerate-api.com/v6/";
 
     public ExchangeRateService() {
