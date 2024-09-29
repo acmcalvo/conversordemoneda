@@ -19,10 +19,15 @@ Este es mi primer proyecto para Back-End Oracle Alura-Latam que consiste en un p
 - Opción de salir del programa en cualquier momento.
 
 ## Pantallas
+Esta es la pantalla principal donde despliega los tipos de monedas que he hablitido hasta este momento
 
 ![Screenshot 2024-09-29 at 7 14 56 PM](https://github.com/user-attachments/assets/a9ca7a4e-8711-4edd-8f75-3f66c3b26d21)
 
-Esta es la pantalla principal donde despliega los tipos de monedas que he hablitido hasta este momento
+Esta segunda pantalla es donde el cliente interactua y entra la cantidad que quiere convertir
+(Nota. Trate de bajar la cantidad decimales pero  el tipo de conversiones no pude bajar a no menos de cinco digitos)
+
+![Screenshot 2024-09-29 at 7 16 05 PM](https://github.com/user-attachments/assets/4967a6dc-a92e-4c18-9285-2233d4e5ff97)
+
 
 
 
