@@ -47,3 +47,7 @@ Para poder ejecutar este proyecto, necesitas:
    ```bash
    git clone https://github.com/usuario/currency-converter.git
    cd currency-converter
+
+   ## Versiones
+
+   Esta es la version que se require, agregare en un futuro proximos mas cambios de modena y ademas la posibilidad de poder bajar un Json de las transacciones.
