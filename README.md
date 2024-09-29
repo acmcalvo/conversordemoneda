@@ -29,6 +29,8 @@ Esta segunda pantalla es donde el cliente interactua y entra la cantidad que qui
 ![Screenshot 2024-09-29 at 7 16 05 PM](https://github.com/user-attachments/assets/4967a6dc-a92e-4c18-9285-2233d4e5ff97)
 
 
+Despues de dar enter para continuar volveran a la primera pagina hasta que decida salir del programa eligiendo la opción 10.
+
 
 
 ## Requisitos
