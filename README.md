@@ -18,9 +18,13 @@ Este es mi primer proyecto para Back-End Oracle Alura-Latam que consiste en un p
 - Manejo de variables de entorno para proteger la clave de API.
 - Opción de salir del programa en cualquier momento.
 
-## Pantalla Principal
+## Pantallas
 
-file:///Users/alvarocalvo/Desktop/Screenshot%202024-09-29%20at%207.14.56%E2%80%AFPM.png
+![Screenshot 2024-09-29 at 7 14 56 PM](https://github.com/user-attachments/assets/a9ca7a4e-8711-4edd-8f75-3f66c3b26d21)
+
+Esta es la pantalla principal donde despliega los tipos de monedas que he hablitido hasta este momento
+
+
 
 ## Requisitos
 
